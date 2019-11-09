@@ -699,6 +699,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   position: relative;
   overflow: hidden;
   margin-bottom: 30px;
+  box-shadow: 5px 6px 13px 0px rgba(14,14,14,0.9);
 }
 
 #speakers .speaker .details {
