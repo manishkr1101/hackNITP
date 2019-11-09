@@ -27,6 +27,29 @@
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
 
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <style>
+  canvas {
+    display: block;
+    /* vertical-align: bottom;s */
+  }
+  /* ---- particles.js container ---- */
+  #particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(14,14,14);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    /* z-index: -1; */
+  }
+  #intro img{
+    position: absolute;
+    max-width: 70%; 
+  }
+  </style>
+
   <!-- =======================================================
     Theme Name: TheEvent
     Theme URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
@@ -46,21 +69,21 @@
       <div id="logo" class="pull-left">
         <!-- Uncomment below if you prefer to use a text logo -->
         <!-- <h1><a href="#main">C<span>o</span>nf</a></h1>-->
-        <a href="#intro" class="scrollto"><img src="img/logo.png" alt="" title=""></a>
+        <a href="#intro" class="scrollto"> <img src="img/logo.png" alt=""> </a>
       </div>
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
           <li class="menu-active"><a href="#intro">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#speakers">Speakers</a></li>
+          <li><a href="#speakers">Teams</a></li>
           <li><a href="#schedule">Schedule</a></li>
           <li><a href="#venue">Venue</a></li>
-          <li><a href="#hotels">Hotels</a></li>
+          <li><a href="#hotels">Accomodation</a></li>
           <li><a href="#gallery">Gallery</a></li>
           <li><a href="#supporters">Sponsors</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li class="buy-tickets"><a href="#buy-tickets">Buy Tickets</a></li>
+          <!--<li class="buy-tickets"><a href="#buy-tickets">Buy Tickets</a></li>-->
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
@@ -68,14 +91,22 @@
 
   <!--==========================
     Intro Section
+  
   ============================-->
   <section id="intro">
     <div class="intro-container wow fadeIn">
-      <h1 class="mb-4 pb-0">The Annual<br><span>Marketing</span> Conference</h1>
-      <p class="mb-4 pb-0">10-12 December, Downtown Conference Center, New York</p>
-      <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video"
-        data-autoplay="true"></a>
-      <a href="#about" class="about-btn scrollto">About The Event</a>
+      <!--<h1 class="mb-4 pb-0">The Annual<br><span>Marketing</span> Conference</h1>
+      <p class="mb-4 pb-0">10-12 December, Downtown Conference Center, New York</p>-->
+      <!--<a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video"
+        data-autoplay="true"></a>-->
+        <div id="particles-js">
+          <canvas class="particles-js-canvas-el"  style="width: 100%; height: 100%;">
+          </canvas>
+        </div>
+        
+        <img src="img/logo.png" alt="hackathonLOGO">
+    
+      <a href="#" class="about-btn scrollto">Apply here</a>
     </div>
   </section>
 
@@ -89,17 +120,15 @@
         <div class="row">
           <div class="col-lg-6">
             <h2>About The Event</h2>
-            <p>Sed nam ut dolor qui repellendus iusto odit. Possimus inventore eveniet accusamus error amet eius aut
-              accusantium et. Non odit consequatur repudiandae sequi ea odio molestiae. Enim possimus sunt inventore in
-              est ut optio sequi unde.</p>
+            <p>The hack is only a small part of the competition. The real spirit lies in building your network in the growing tech community and collaborating with some of the finest minds of the nation. Just remember, taking the Hackathons too seriously defeats the purpose. Save the seriousness for pitching to investors. Keeping an open mind will open new doors, help build new relationships and acquire new skills.This is hackNITP.</p>
           </div>
           <div class="col-lg-3">
             <h3>Where</h3>
-            <p>Downtown Conference Center, New York</p>
+            <p>Meghnath Saha Hall,NIT Patna,Patna</p>
           </div>
           <div class="col-lg-3">
             <h3>When</h3>
-            <p>Monday to Wednesday<br>10-12 December</p>
+            <p>Friday to Sunday<br>10-12 January 2020</p>
           </div>
         </div>
       </div>
@@ -844,6 +873,109 @@
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
+
+  <script type="text/javascript">
+    particlesJS('particles-js', {
+      'particles': {
+          'number': {
+              'value': 300,
+              'density': {
+                  'enable': true,
+                  'value_area': 800
+              }
+          },
+          'color': { 'value': '#ffffff' },
+          'shape': {
+              'type': 'circle',
+              'stroke': {
+                  'width': 0,
+                  'color': '#000000'
+              },
+              'polygon': { 'nb_sides': 5 },
+              'image': {
+                  'src': 'img/github.svg',
+                  'width': 100,
+                  'height': 100
+              }
+          },
+          'opacity': {
+              'value': 0.5,
+              'random': false,
+              'anim': {
+                  'enable': false,
+                  'speed': 2,
+                  'opacity_min': 0.1,
+                  'sync': false
+              }
+          },
+          'size': {
+              'value': 3,
+              'random': true,
+              'anim': {
+                  'enable': false,
+                  'speed': 80,
+                  'size_min': 0.1,
+                  'sync': false
+              }
+          },
+          'line_linked': {
+              'enable': true,
+              'distance': 90,
+              'color': '#ffffff',
+              'opacity': 0.4,
+              'width': 1
+          },
+          'move': {
+              'enable': true,
+              'speed': 6,
+              'direction': 'none',
+              'random': false,
+              'straight': false,
+              'out_mode': 'out',
+              'bounce': false,
+              'attract': {
+                  'enable': false,
+                  'rotateX': 600,
+                  'rotateY': 1200
+              }
+          }
+      },
+      'interactivity': {
+          'detect_on': 'canvas',
+          'events': {
+              'onhover': {
+                  'enable': true,
+                  'mode': 'grab'
+              },
+              'onclick': {
+                  'enable': true,
+                  'mode': 'push'
+              },
+              'resize': true
+          },
+          'modes': {
+              'grab': {
+                  'distance': 140,
+                  'line_linked': { 'opacity': 1 }
+              },
+              'bubble': {
+                  'distance': 300,
+                  'size': 40,
+                  'duration': 2,
+                  'opacity': 8,
+                  'speed': 4
+              },
+              'repulse': {
+                  'distance': 140,
+                  'duration': 0.4
+              },
+              'push': { 'particles_nb': 4 },
+              'remove': { 'particles_nb': 2 }
+          }
+      },
+      'retina_detect': true
+  });
+  </script>
 </body>
 
 </html>
