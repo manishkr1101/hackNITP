@@ -698,7 +698,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 #speakers .speaker {
   position: relative;
   overflow: hidden;
-  margin-bottom: 30px;
+  margin-bottom: 30px!important;
+  margin: auto;
+  width: 250px;
   box-shadow: 5px 6px 13px 0px rgba(14,14,14,0.9);
 }
 
@@ -715,9 +717,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #speakers .speaker .details h3 {
   color: #fff;
-  font-size: 22px;
-  font-weight: 600;
+  font-size: 17px;
+  font-weight: 550;
   margin-bottom: 5px;
+
 }
 
 #speakers .speaker .details p {
@@ -1488,7 +1491,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #footer .footer-top .footer-contact {
-  /* margin-bottom: 30px; */
+ /* margin-bottom: 30px; */
 }
 
 #footer .footer-top .footer-contact p {
