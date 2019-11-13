@@ -690,7 +690,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 /*--------------------------------------------------------------
 # Speakers Section
 --------------------------------------------------------------*/
-
+.Judges img{
+  filter: blur(0.8px);
+}
 #speakers {
   padding: 60px 0 30px 0;
 }
@@ -1649,6 +1651,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 @media (max-width: 480px) {
   #schedule .nav-tabs a {
     padding: 8px 30px;
+  }
+  #buy-tickets .container{
+    width: 75%;
   }
 }
 
