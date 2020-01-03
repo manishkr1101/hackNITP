@@ -36,9 +36,10 @@
   /* ---- particles.js container ---- */
   #particles-js {
     position: absolute;
+    background: #000000;
+    background-image: url("img/space2.png");
     width: 100%;
     height: 100%;
-    background-color: rgb(14,14,14);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
@@ -73,7 +74,7 @@
       <div id="logo" class="pull-left">
         <!-- Uncomment below if you prefer to use a text logo -->
         <!-- <h1><a href="#main">C<span>o</span>nf</a></h1>-->
-        <a href="#intro" class="scrollto"> <img style="max-height: 50px;" src="img/logo.png" alt=""> </a>
+        <a href="#intro" class="scrollto"> <img style="max-height: 50px;" src="img/logo2.png" alt=""> </a>
       </div>
 
       <nav id="nav-menu-container">
@@ -110,7 +111,7 @@
           </canvas>
         </div>
 
-        <img src="img/logo.png" alt="hackathonLOGO">
+        <img src="img/logo2.png" alt="hackathonLOGO">
 
       <a href="#" class="about-btn scrollto">
           <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115.46 123.46" style="height:24px;width:24px;margin-right:8px;fill:white"><path d="M115.46 68a55.43 55.43 0 0 1-50.85 55.11S28.12 124 16 123a12.6 12.6 0 0 1-10.09-7.5 15.85 15.85 0 0 0 5.36 1.5c4 .34 10.72.51 20.13.51 13.82 0 28.84-.38 29-.38h.26a60.14 60.14 0 0 0 54.72-52.47c.05 1.05.08 2.18.08 3.34z"></path><path d="M110.93 55.87A55.43 55.43 0 0 1 60.08 111s-36.48.92-48.58-.12C5 110.29.15 104.22 0 97.52l.2-83.84C.38 7 5.26.94 11.76.41c12.11-1 48.59.12 48.59.12a55.41 55.41 0 0 1 50.58 55.34z"></path></svg>
@@ -866,7 +867,7 @@
               <p><a href="tel:+918114536004">+91 8114536004 (Atul Kumar) </a></p><br>
 
               <p>Co-coordinator</p>
-              <p><a href="tel:+917054236786">+91 7054236786 (Shikhar Shrivastav) </a></p>
+              <p><a href="tel:+917054236786">+91 7054236786 (Shikhar Srivastava) </a></p>
               <p><a href="tel:+917033216156">+91 7033216156 (Devanshu) </a></p><br>
             </div>
           </div>
@@ -875,8 +876,8 @@
             <div class="contact-email">
               <i class="ion-ios-email-outline"></i>
               <h3>Email</h3>
-              <p><a href="mailto:hacknitp@gmail.com">hacnitp@gmail.com</a></p>
-              <p><a href="mailto:hackslash.nitp@gmail.com">hackslash.nitp@gmail.com</a></p>
+              <p><a href="mailto:byteworld@nitp.ac.in">byteworld@nitp.ac.in</a></p>
+              <!-- <p><a href="mailto:hackslash.nitp@gmail.com">hackslash.nitp@gmail.com</a></p> -->
             </div>
           </div>
 
@@ -969,7 +970,7 @@
               }
           },
           'opacity': {
-              'value': 0.9,
+              'value': 0.5,
               'random': false,
               'anim': {
                   'enable': false,
@@ -983,7 +984,7 @@
               'random': true,
               'anim': {
                   'enable': false,
-                  'speed': 15,
+                  'speed': 1,
                   'size_min': 1,
                   'sync': false
               }
@@ -993,7 +994,7 @@
               'distance': 150,
               'color': '#ffffff',
               'opacity': 0.4,
-              'width': 1.5
+              'width': 1
           },
           'move': {
               'enable': true,
@@ -1017,10 +1018,7 @@
                   'enable': true,
                   'mode': 'grab'
               },
-              'onclick': {
-                  'enable': true,
-                  'mode': 'push'
-              },
+
               'resize': true
           },
           'modes': {
@@ -1033,7 +1031,7 @@
                   'size': 40,
                   'duration': 2,
                   'opacity': 8,
-                  'speed': 4
+                  'speed': 1
               },
               'repulse': {
                   'distance': 140,
