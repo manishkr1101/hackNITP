@@ -36,9 +36,10 @@
   /* ---- particles.js container ---- */
   #particles-js {
     position: absolute;
+    background: #000000;
+    background-image: url("img/space2-min.png");
     width: 100%;
     height: 100%;
-    background-color: rgb(14,14,14);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
@@ -46,7 +47,7 @@
   }
   #intro img{
     position: absolute;
-    max-width: 70%; 
+    max-width: 70%;
   }
   .img-btn{
     background-color: rgb(14,14,14);
@@ -55,9 +56,26 @@
     height: 100%;
     
     }
+  .contact.social-links{
+    display: inline-block;
+    margin-right: 1rem;
+    margin-top: 1rem;
+  }
+    
+  .contact{
+    color:white;
+        display: inline-block;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    max-width:70%;
+    }
+  #speakers .row, #supporters .row{
+    justify-content: center;
+  }
+
   </style>
 
-  
+
 </head>
 
 <body>
@@ -71,18 +89,19 @@
       <div id="logo" class="pull-left">
         <!-- Uncomment below if you prefer to use a text logo -->
         <!-- <h1><a href="#main">C<span>o</span>nf</a></h1>-->
-        <a href="#intro" class="scrollto"> <img style="max-height: 50px;" src="img/logo.png" alt=""> </a>
+        <a href="#intro" class="scrollto"> <img style="max-height: 50px;" src="img/logo2.png" alt=""> </a>
       </div>
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
           <li class="menu-active"><a href="#intro">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#speakers">Teams</a></li>
           <li><a href="#schedule">Schedule</a></li>
+          <li><a href="#buy-tickets">Prizes</a></li>
           <li><a href="#venue">Venue</a></li>
-          <!-- <li><a href="#hotels">Accomodation</a></li> -->
           <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#speakers">Judges</a></li>
+          <!-- <li><a href="#hotels">Accomodation</a></li> -->
           <li><a href="#supporters">Sponsors</a></li>
           <li><a href="#faq">FAQ</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -94,7 +113,7 @@
 
   <!--==========================
     Intro Section
-  
+
   ============================-->
   <section id="intro">
     <div class="intro-container wow fadeIn">
@@ -106,10 +125,21 @@
           <canvas class="particles-js-canvas-el"  style="width: 100%; height: 100%;">
           </canvas>
         </div>
-        
-        <img src="img/logo.png" alt="hackathonLOGO">
-    
-      <a href="#" class="about-btn scrollto">Apply here</a>
+
+        <img src="img/logo2.png" alt="hackathonLOGO">
+
+
+      <a href="https://devfolio.co/external-apply/hack-nitp" target="_blank" class="about-btn scrollto">
+          <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115.46 123.46" style="height:24px;width:24px;margin-right:8px;fill:white"><path d="M115.46 68a55.43 55.43 0 0 1-50.85 55.11S28.12 124 16 123a12.6 12.6 0 0 1-10.09-7.5 15.85 15.85 0 0 0 5.36 1.5c4 .34 10.72.51 20.13.51 13.82 0 28.84-.38 29-.38h.26a60.14 60.14 0 0 0 54.72-52.47c.05 1.05.08 2.18.08 3.34z"></path><path d="M110.93 55.87A55.43 55.43 0 0 1 60.08 111s-36.48.92-48.58-.12C5 110.29.15 104.22 0 97.52l.2-83.84C.38 7 5.26.94 11.76.41c12.11-1 48.59.12 48.59.12a55.41 55.41 0 0 1 50.58 55.34z"></path></svg>
+        Apply with Devfolio
+      </a> -->
+      
+      <!-- <button id="devfolio-apply-now"><svg class="logo" xmlns="http://www.w3.org/2000/svg" fill="#fff"viewBox="0 0 115.46 123.46" style="height:24px;width:24px;margin-right:8px"><path d="M115.46 68a55.43 55.43 0 0 1-50.85 55.11S28.12 124 16 123a12.6 12.6 0 0 1-10.09-7.5 15.85 15.85 0 0 0 5.36 1.5c4 .34 10.72.51 20.13.51 13.82 0 28.84-.38 29-.38h.26a60.14 60.14 0 0 0 54.72-52.47c.05 1.05.08 2.18.08 3.34z" /><path d="M110.93 55.87A55.43 55.43 0 0 1 60.08 111s-36.48.92-48.58-.12C5 110.29.15 104.22 0 97.52l.2-83.84C.38 7 5.26.94 11.76.41c12.11-1 48.59.12 48.59.12a55.41 55.41 0 0 1 50.58 55.34z"/></svg>Apply with Devfolio</button> -->
+
+
+      
+      
+
     </div>
   </section>
 
@@ -131,116 +161,31 @@
           </div>
           <div class="col-lg-3">
             <h3>When</h3>
-            <p>Friday to Sunday<br>10-12 January 2020</p>
+            <p>Saturday to Sunday<br>18-19 January 2020</p>
           </div>
         </div>
       </div>
-    </section>
-
-    <!--==========================
-      Speakers Section
-    ============================-->
-    <section id="speakers" class="wow fadeInUp">
       <div class="container">
-        <div class="section-header">
-          <h2>Teams</h2>
-          <p>Here are some of our teams</p>
-        </div>
-
         <div class="row">
-          <div class="col-lg-4 col-md-6">
-            <div class="speaker">
-              <img src="img/speakers/ap.jpg" style="width: 100%" alt="Speaker 1" class="img-fluid">
-              <div class="details">
-                <h3><a href="#">Team IND-godspeed</a></h3>
-                <div class="social">
-                  <a href=""><i class="fa fa-twitter"></i></a>
-                  <a href=""><i class="fa fa-facebook"></i></a>
-                  <a href=""><i class="fa fa-google-plus"></i></a>
-                  <a href=""><i class="fa fa-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
+          <div class="col-lg-6">
+            <h2>About NIT Patna</h2>
+            <p>National Institute of Technology Patna is the 18th National Institute of Technology created by the Ministry of H.R.D. Government of India after rechristening the erstwhile Bihar College of Engineering Patna on 28. 01. 2004. NIT Patna marked its humble beginning in 1886 with the establishment of pleaders survey training school which was subsequently promoted of Bihar College of Engineering Patna in 1924. This made this institute the 6th Oldest Engineering Institute of India. The graduate level curriculum was later elevated to the post graduate level in 1978. The institute is situated on the south bank of holy river Ganges behind Gandhi Ghat, one of the most important and reverential place of Patna. The Gandhi Ghat is associated with the immersion of ashes of father of the Nation Mahatma Gandhi in the river Ganges. The campus has a picturesque river view with historic building presenting a spectacle of architectural delight and natural beauty.</p>
+            <!-- <p>The National Institute of Technology Patna, formerly Bihar School of Engineering and Bihar College of Engineering, is a public engineering institution located in Patna in the Indian state of Bihar. It was renamed to NIT Patna, by the Government of India on 28 January 2004. It is an autonomous institute that functions directly under Ministry of Human Resource Development, Government of India. It is one of the 31 National Institutes of Technology in India and is an institute of national importance.</p> -->
           </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="speaker">
-              <img src="img/speakers/manish.png" style="width: 100%" alt="Speaker 5" class="img-fluid">
-              <div class="details">
-                <h3><a href="#">Team Javascript Mayhem</a></h3>
-                <div class="social">
-                  <a href=""><i class="fa fa-twitter"></i></a>
-                  <a href=""><i class="fa fa-facebook"></i></a>
-                  <a href=""><i class="fa fa-google-plus"></i></a>
-                  <a href=""><i class="fa fa-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col-lg-4 col-md-6">
-            <div class="speaker">
-              <img src="img/speakers/rk.png" style="width: 100%" alt="Speaker 3" class="img-fluid">
-              <div class="details">
-                <h3><a href="#">Team Creep Access</a></h3>
-                <div class="social">
-                  <a href=""><i class="fa fa-twitter"></i></a>
-                  <a href=""><i class="fa fa-facebook"></i></a>
-                  <a href=""><i class="fa fa-google-plus"></i></a>
-                  <a href=""><i class="fa fa-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="speaker">
-              <img src="img/speakers/parth.png" style="width: 100%" alt="Speaker 4" class="img-fluid">
-              <div class="details">
-                <h3><a href="#">Team Bit Rebels</a></h3>
-                <div class="social">
-                  <a href=""><i class="fa fa-twitter"></i></a>
-                  <a href=""><i class="fa fa-facebook"></i></a>
-                  <a href=""><i class="fa fa-google-plus"></i></a>
-                  <a href=""><i class="fa fa-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="speaker">
-              <img src="img/speakers/harsh.png" style="width: 100%" alt="Speaker 2" class="img-fluid">
-              <div class="details">
-                <h3><a href="#">Team Trojan Hash</a></h3>
-                <div class="social">
-                  <a href=""><i class="fa fa-twitter"></i></a>
-                  <a href=""><i class="fa fa-facebook"></i></a>
-                  <a href=""><i class="fa fa-google-plus"></i></a>
-                  <a href=""><i class="fa fa-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="speaker">
-              <img src="img/speakers/manpreet.png" style="width: 100%" alt="Speaker 6" class="img-fluid">
-              <div class="details">
-                <h3><a href="#">Team 101 Found</a></h3>
-                <div class="social">
-                  <a href=""><i class="fa fa-twitter"></i></a>
-                  <a href=""><i class="fa fa-facebook"></i></a>
-                  <a href=""><i class="fa fa-google-plus"></i></a>
-                  <a href=""><i class="fa fa-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
+          <div class="col-lg-6">
+            <h3></h3>
+            <!-- <p>Ashok Rajpath, Mahendru, Patna(Bihar)</p> -->
+            <br><br>
+            <p>National Institute of Technology Patna has been declared as an Institute of National Importance and has been granted a fully Autonomous Status by MHRD, Government of India. The Institute has also been declared as a Centre of Excellence of impart high level education training , research and development in science, engineering technology and humanities. It is imparting high quality education & values at UG (B.Tech), PG (M.Tech) & Ph .D programmes through its experienced faculty well versed in their respective field of engineering an technology with well equipped laboratories . At present the Institute has seven disciplines viz. Architecture, Civil Engineering, Compute Science & Engg., Electrical Engg., Electronics & Communication Engg., Information Technology and Mechanical Engg., and well established departments of physics, Mathematics and Humanities and Social Science.</p>
           </div>
         </div>
       </div>
-
     </section>
 
     <!--==========================
       Schedule Section
     ============================-->
+
     <section id="schedule" class="section-with-bg">
       <div class="container wow fadeInUp">
         <div class="section-header">
@@ -255,9 +200,6 @@
           <li class="nav-item">
             <a class="nav-link" href="#day-2" role="tab" data-toggle="tab">Day 2</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#day-3" role="tab" data-toggle="tab">Day 3</a>
-          </li>
         </ul>
 
         <h3 class="sub-heading">The schedule of above mentioned day is as follows.</h3>
@@ -268,17 +210,66 @@
           <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1">
 
             <div class="row schedule-item">
-              <div class="col-md-2"><time>Time - 18:00</time></div>
+              <div class="col-md-2"><time>Time - 07:30</time></div>
               <div class="col-md-10">
-                <h4>Inauguration</h4>
+                <h4>Inauguration and Registration</h4>
                 <p>Inauguration of the event by guests and organising committee.</p>
               </div>
             </div>
             <div class="row schedule-item">
-              <div class="col-md-2"><time>Time - 20:00</time></div>
+              <div class="col-md-2"><time>Time - 08:00</time></div>
               <div class="col-md-10">
-                <h4>Registration</h4>
-                <p>Registration for the event starts.</p>
+                <h4>Hacking Kickstarts</h4>
+                <p>Start of 2 day long coding session.</p>
+              </div>
+            </div>
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>Time - 11:00</time></div>
+              <div class="col-md-10">
+                <h4>Snack Break</h4>
+                <p>Relaxation with some snacks.</p>
+              </div>
+            </div>
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>Time - 13:00</time></div>
+              <div class="col-md-10">
+                <h4>Lunch Break</h4>
+                <p>Lunch time.</p>
+              </div>
+            </div>
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>Time - 15:00</time></div>
+              <div class="col-md-10">
+                <h4>Interactive Session</h4>
+                <p>First round of training session(15 minutes per team).</p>
+              </div>
+            </div>
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>Time - 18:00</time></div>
+              <div class="col-md-10">
+                <h4>Refreshments</h4>
+                <p>Distribution of refreshments.</p>
+              </div>
+            </div>
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>Time - 19:00</time></div>
+              <div class="col-md-10">
+                <h4>First Evaluation</h4>
+                <p>First round of evaluation(10 minutes per team).</p>
+              </div>
+            </div>
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>Time - 20:30</time></div>
+              <div class="col-md-10">
+                <h4>Dinner</h4>
+                <p>Dinner break.</p>
+              </div>
+            </div>
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>Time - 00:00</time></div>
+              <div class="col-md-10">
+                <h4>Interactive Session</h4>
+                <p>Second round of training session(15 minutes per team).</p>
               </div>
             </div>
 
@@ -289,260 +280,58 @@
           <div role="tabpanel" class="col-lg-9  tab-pane fade" id="day-2">
 
             <div class="row schedule-item">
-              <div class="col-md-2"><time>Time - 00:00</time></div>
+              <div class="col-md-2"><time>Time - 03:00</time></div>
               <div class="col-md-10">
-                <h4>Hacking Kickstarts</h4>
-                <p>Start of 2 day long coding session.</p>
+                <h4>Fun Quiz and Snack Break</h4>
+                <p>Distribution of snacks and a fun event.</p>
               </div>
             </div>
             <div class="row schedule-item">
-              <div class="col-md-2"><time>Time - 02:00</time></div>
-              <div class="col-md-10">
-                <h4>Midnight Snacks</h4>
-                <p>Relaxation with some snacks.</p>
-              </div>
-            </div>
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>Time - 06:00</time></div>
-              <div class="col-md-10">
-                <h4>Fun Quiz</h4>
-                <p>Rest cum break with a fun quiz.</p>
-              </div>
-            </div>
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>Time - 08:00</time></div>
+              <div class="col-md-2"><time>Time - 07:00</time></div>
               <div class="col-md-10">
                 <h4>Breakfast</h4>
-                <p>Distribution of morning breakfast.</p>
-              </div>
-            </div>
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>Time - 09:00</time></div>
-              <div class="col-md-10">
-                <h4>Webinar</h4>
-                <p>Webinar by an expert.</p>
-              </div>
-            </div>
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>Time - 12:30</time></div>
-              <div class="col-md-10">
-                <h4>Lunch</h4>
-                <p>Lunch time.</p>
-              </div>
-            </div>
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>Time - 18:00</time></div>
-              <div class="col-md-10">
-                <h4>Evening Snacks</h4>
-                <p>Distribution of evening snacks.</p>
-              </div>
-            </div>
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>Time - 20:00</time></div>
-              <div class="col-md-10">
-                <h4>Talk</h4>
-                <p>Short session by an expert guest.</p>
-              </div>
-            </div>
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>Time - 21:00</time></div>
-              <div class="col-md-10">
-                <h4>Dinner</h4>
-                <p>Distribution of dinner.</p>
-              </div>
-            </div>
-
-          </div>
-          <!-- End Schdule Day 2 -->
-
-          <!-- Schdule Day 3 -->
-          <div role="tabpanel" class="col-lg-9  tab-pane fade" id="day-3">
-
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>Time - 02:00</time></div>
-              <div class="col-md-10">
-                <h4>Midnight Snacks</h4>
-                <p>Relaxation with some snacks.</p>
-              </div>
-            </div>
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>Time - 08:00</time></div>
-              <div class="col-md-10">
-                <h4>Breakfast</h4>
-                <p>Distribution of breakfast.</p>
-              </div>
-            </div>
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>Time - 09:00</time></div>
-              <div class="col-md-10">
-                <h4>Evaluation Starts</h4>
-                <p>Evaluation of the project starts.</p>
+                <p>Morning breakfast is distributed.</p>
               </div>
             </div>
             <div class="row schedule-item">
               <div class="col-md-2"><time>Time - 12:00</time></div>
               <div class="col-md-10">
-                <h4>Lunch</h4>
+                <h4>Lunch Break</h4>
                 <p>Lunch time.</p>
-              </div>
-            </div>
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>Time - 13:30</time></div>
-              <div class="col-md-10">
-                <h4>Presentation</h4>
-                <p>Presentation round starts with completed projects.</p>
               </div>
             </div>
             <div class="row schedule-item">
               <div class="col-md-2"><time>Time - 15:00</time></div>
               <div class="col-md-10">
-                <h4>Announcement of Results</h4>
-                <p>Annoucement of results with thankyou speech.</p>
+                <h4>Hackathon Ends</h4>
+                <p>End of the coding session.</p>
+              </div>
+            </div>
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>Time - 16:00</time></div>
+              <div class="col-md-10">
+                <h4>Presentation Round</h4>
+                <p>Presentation round starts with completed projects.</p>
+              </div>
+            </div>
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>Time - 18:00</time></div>
+              <div class="col-md-10">
+                <h4>Results</h4>
+                <p>Announcement of the winning teams</p>
+              </div>
+            </div>
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>Time - 19:00</time></div>
+              <div class="col-md-10">
+                <h4>Event Ends</h4>
+                <p>Closing address by chief guest.</p>
               </div>
             </div>
 
           </div>
           <!-- End Schdule Day 2 -->
 
-        </div>
-
-      </div>
-
-    </section>
-
-    <!--==========================
-      Venue Section
-    ============================-->
-    <section id="venue" class="wow fadeInUp">
-
-      <div class="container-fluid">
-
-        <div class="section-header">
-          <h2>Event Venue</h2>
-          <p>Event venue location info and gallery</p>
-        </div>
-
-        <div class="row no-gutters">
-          <div class="col-lg-6 venue-map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1538.7866509593368!2d85.17148240000004!3d25.6205723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed58dce1098af7%3A0xd3ab2e3afc171805!2sNational+Institute+of+Technology+Patna!5e1!3m2!1sen!2s!4v1402950851850" frameborder="0" style="border:0" allowfullscreen></iframe>
-          </div>
-
-          <div class="col-lg-6 venue-info">
-            <div class="row justify-content-center">
-              <div class="col-11 col-lg-8">
-                <h3>Meghnad Saha Hall,NIT Patna</h3>
-                <p>This is the fourth hackathon being conducted by NIT Patna and the first one that is being conducted on such a large scale</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="container-fluid venue-gallery-container">
-        <div class="row no-gutters">
-
-          <div class="col-lg-3 col-md-4">
-            <div class="venue-gallery">
-              <a href="img/venue-gallery/1.jpg" class="venobox" data-gall="venue-gallery">
-                <img src="img/venue-gallery/1.jpeg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="venue-gallery">
-              <a href="img/venue-gallery/2.jpg" class="venobox" data-gall="venue-gallery">
-                <img src="img/venue-gallery/2.jpeg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="venue-gallery">
-              <a href="img/venue-gallery/3.jpg" class="venobox" data-gall="venue-gallery">
-                <img src="img/venue-gallery/3.jpeg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="venue-gallery">
-              <a href="img/venue-gallery/4.jpg" class="venobox" data-gall="venue-gallery">
-                <img src="img/venue-gallery/4.jpeg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-    
-
-        </div>
-      </div>
-
-    </section>
-
-    
-    
-    <!--==========================
-      Gallery Section
-    ============================-->
-    <section id="gallery" class="wow fadeInUp">
-
-      <div class="container">
-        <div class="section-header">
-          <h2>Gallery</h2>
-          <p>Check our gallery from the past hackathon</p>
-        </div>
-      </div>
-
-      <div class="owl-carousel gallery-carousel">
-        <a href="img/gallery/ht3.jpeg" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/ht3.jpeg" alt=""></a>
-        <a href="img/gallery/ht4.jpeg" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/ht4.jpeg" alt=""></a>
-        <a href="img/gallery/ht6.jpeg" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/ht6.jpeg" alt=""></a>
-        <a href="img/gallery/ht11.jpeg" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/ht11.jpeg" alt=""></a>
-        <a href="img/gallery/ht17.jpeg" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/ht17.jpeg" alt=""></a>
-        <a href="img/gallery/ht14.jpeg" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/ht14.jpeg" alt=""></a>
-        <a href="img/gallery/ht7.jpeg" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/ht7.jpeg" alt=""></a>
-        <a href="img/gallery/ht8.jpeg" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/ht8.jpeg" alt=""></a>
-      </div>
-
-    </section>
-
-    <!--==========================
-      Sponsors Section
-    ============================-->
-    <section id="supporters" class="section-with-bg wow fadeInUp">
-
-      <div class="container">
-        <div class="section-header">
-          <h2>Sponsors</h2>
-        </div>
-
-        <div class="row no-gutters supporters-wrap clearfix">
-
-          <div class="col-lg-3 col-md-6 col-xs-6">
-            <div class="supporter-logo">
-              <img src="img/supporters/sponsor1.jpg" style="height: 90%" class="img-fluid" alt="">
-            </div>
-          </div>
-          
-          <div class="col-lg-3 col-md-6 col-xs-6">
-            <div class="supporter-logo">
-              <img src="img/supporters/sponsor2.png" style="height: 90%" class="img-fluid" alt="">
-            </div>
-          </div>
-        
-          <div class="col-lg-3 col-md-6 col-xs-6">
-            <div class="supporter-logo">
-              <img src="img/supporters/sponsor3.png" style="height: 90%" class="img-fluid" alt="">
-            </div>
-          </div>
-          
-          <div class="col-lg-3 col-md-6 col-xs-6">
-            <div class="supporter-logo">
-              <img src="img/supporters/sponsor4.png" style="height: 90%" class="img-fluid" alt="">
-            </div>
-          </div>
 
         </div>
 
@@ -550,105 +339,7 @@
 
     </section>
 
-    <!--==========================
-      F.A.Q Section
-    ============================-->
-    <section id="faq" class="wow fadeInUp">
-
-      <div class="container">
-
-        <div class="section-header">
-          <h2>F.A.Q </h2>
-        </div>
-
-        <div class="row justify-content-center">
-          <div class="col-lg-9">
-              <ul id="faq-list">
-
-                <li>
-                  <a data-toggle="collapse" class="collapsed" href="#faq1">Do you have a particular theme for the Hackathon?<i class="fa fa-minus-circle"></i></a>
-                  <div id="faq1" class="collapse" data-parent="#faq-list">
-                    <p>
-                      Yes the Hackathon is based on the list of problem statements. You can use any technology to build your hacks.
-                    </p>
-                  </div>
-                </li>
-      
-                <li>
-                  <a data-toggle="collapse" href="#faq2" class="collapsed">
-                    Are there any registration charges? <i class="fa fa-minus-circle"></i></a>
-                  <div id="faq2" class="collapse" data-parent="#faq-list">
-                    <p>
-                      Yes. There are registration charges.
-                    </p>
-                  </div>
-                </li>
-      
-                <li>
-                  <a data-toggle="collapse" href="#faq3" class="collapsed">Do you provide accommodation and fooding? <i class="fa fa-minus-circle"></i></a>
-                  <div id="faq3" class="collapse" data-parent="#faq-list">
-                    <p>
-                      Yes. Each team member will be provided with accommodation and fooding during the Hackathon. You don't need to pay a single penny. That's on us.
-                    </p>
-                  </div>
-                </li>
-      
-                <li>
-                  <a data-toggle="collapse" href="#faq4" class="collapsed">Do you provide travel reimbursements? <i class="fa fa-minus-circle"></i></a>
-                  <div id="faq4" class="collapse" data-parent="#faq-list">
-                    <p>
-                      No. There will be no travel reimbursement.
-                    </p>
-                  </div>
-                </li>
-      
-                <li>
-                  <a data-toggle="collapse" href="#faq5" class="collapsed">Is the selection per-member or per-team basis? <i class="fa fa-minus-circle"></i></a>
-                  <div id="faq5" class="collapse" data-parent="#faq-list">
-                    <p>
-                      The selection is a per-team basis.
-                    </p>
-                  </div>
-                </li>
-      
-                <li>
-                  <a data-toggle="collapse" href="#faq6" class="collapsed">I don't have a CSE background. Can I still participate? <i class="fa fa-minus-circle"></i></a>
-                  <div id="faq6" class="collapse" data-parent="#faq-list">
-                    <p>
-                      Yes. Creativity is independent of your technical skills. You can learn the tools and technologies anytime.
-                    </p>
-                  </div>
-                </li>
-
-                 <li>
-                  <a data-toggle="collapse" href="#faq7" class="collapsed">Do we get any certificate for participation? <i class="fa fa-minus-circle"></i></a>
-                  <div id="faq7" class="collapse" data-parent="#faq-list">
-                    <p>
-                      Yes, you do get a certificate of participation if you qualify for the finals after the initial shortlisting.
-                    </p>
-                  </div>
-                </li>
-
-                <li>
-                  <a data-toggle="collapse" href="#faq8" class="collapsed">I don't find my question listed here. What can I do? <i class="fa fa-minus-circle"></i></a>
-                  <div id="faq8" class="collapse" data-parent="#faq-list">
-                    <p>
-                      You acn always contact us.
-                    </p>
-                  </div>
-                </li>
-      
-              </ul>
-          </div>
-        </div>
-
-      </div>
-
-    </section>
-
-    
-
-    <!--==========================
+     <!--==========================
       prize Section
     ============================-->
     <section id="buy-tickets" class="section-with-bg wow fadeInUp">
@@ -659,38 +350,15 @@
         </div>
 
         <div class="row">
-          <div class="col-lg-4">
-            <div class="card mb-5 mb-lg-0">
-              <div class="card-body">
-                <h5 class="card-title text-muted text-uppercase text-center">Second Prize</h5>
-                <div style="text-align: center;">
-                  <img src="img/second.png" style="width: 90%;margin: 20px auto">
-                </div>
-                <h6 class="card-price text-center">₹25000</h6>
-                <!-- <hr>
-                <ul class="fa-ul">
-                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Regular Seating</li>
-                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Coffee Break</li>
-                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Custom Badge</li>
-                  <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>Community Access</li>
-                  <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>Workshop Access</li>
-                  <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>After Party</li>
-                </ul>
-                <hr>
-                <div class="text-center">
-                  <button type="button" class="btn" data-toggle="modal" data-target="#buy-ticket-modal" data-ticket-type="standard-access">Buy Now</button>
-                </div> -->
-              </div>
-            </div>
-          </div>
+
           <div class="col-lg-4">
             <div class="card mb-5 mb-lg-0">
               <div class="card-body">
                 <h5 class="card-title text-muted text-uppercase text-center">First Prize</h5>
                 <div style="text-align: center;">
-                  <img src="img/first.png" style="width: 90%;margin: 20px auto">
+                  <img src="img/first.png" style="width: 70%;margin: 20px auto">
                 </div>
-                <h6 class="card-price text-center">₹50000</h6>
+                <h6 class="card-price text-center">₹25000</h6>
                 <!-- <hr>
                 <ul class="fa-ul">
                   <li><span class="fa-li"><i class="fa fa-check"></i></span>Regular Seating</li>
@@ -707,16 +375,40 @@
               </div>
             </div>
           </div>
+          <div class="col-lg-4">
+            <div class="card mb-5 mb-lg-0">
+              <div class="card-body">
+                <h5 class="card-title text-muted text-uppercase text-center">Second Prize</h5>
+                <div style="text-align: center;">
+                  <img src="img/second.png" style="width: 70%;margin: 20px auto">
+                </div>
+                <h6 class="card-price text-center">₹15000</h6>
+                <!-- <hr>
+                <ul class="fa-ul">
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Regular Seating</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Coffee Break</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Custom Badge</li>
+                  <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>Community Access</li>
+                  <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>Workshop Access</li>
+                  <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>After Party</li>
+                </ul>
+                <hr>
+                <div class="text-center">
+                  <button type="button" class="btn" data-toggle="modal" data-target="#buy-ticket-modal" data-ticket-type="standard-access">Buy Now</button>
+                </div> -->
+              </div>
+            </div>
+          </div>
           <!-- Pro Tier -->
           <div class="col-lg-4">
             <div class="card">
               <div class="card-body">
                 <h5 class="card-title text-muted text-uppercase text-center">Third Prize</h5>
                 <div style="text-align: center;">
-                  <img src="img/third.png" style="width: 90%;margin: 20px auto">
+                  <img src="img/third.png" style="width: 70%;margin: 20px auto">
                 </div>
-                
-                <h6 class="card-price text-center">₹15000</h6>
+
+                <h6 class="card-price text-center">₹10000</h6>
                 <!-- <hr>
                 <ul class="fa-ul">
                   <li><span class="fa-li"><i class="fa fa-check"></i></span>Regular Seating</li>
@@ -776,6 +468,406 @@
     </section>
 
     <!--==========================
+      Venue Section
+    ============================-->
+    <section id="venue" class="wow fadeInUp">
+
+      <div class="container-fluid">
+
+        <div class="section-header">
+          <h2>Event Venue</h2>
+          <p>Event venue location info and gallery</p>
+        </div>
+
+        <div class="row no-gutters">
+          <div class="col-lg-6 venue-map">
+            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1538.7866509593368!2d85.17148240000004!3d25.6205723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed58dce1098af7%3A0xd3ab2e3afc171805!2sNational+Institute+of+Technology+Patna!5e1!3m2!1sen!2s!4v1402950851850" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+            <iframe src="https://maps.google.com/maps?q=nit%20patna&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" style="border: 0;"></iframe>
+          </div>
+
+          <div class="col-lg-6 venue-info">
+            <div class="row justify-content-center">
+              <div class="col-11 col-lg-8">
+                <h3>Meghnad Saha Hall,NIT Patna</h3>
+                <p>This is the second hackathon being conducted by NIT Patna and the first one that is being conducted on such a large scale</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="container-fluid venue-gallery-container">
+        <div class="row no-gutters">
+
+          <div class="col-lg-3 col-md-4">
+            <div class="venue-gallery">
+              <a href="img/venue-gallery/1.jpeg" class="venobox" data-gall="venue-gallery">
+                <img src="img/venue-gallery/1.jpeg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4">
+            <div class="venue-gallery">
+              <a href="img/venue-gallery/2.jpeg" class="venobox" data-gall="venue-gallery">
+                <img src="img/venue-gallery/2.jpeg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="venue-gallery">
+              <a href="img/venue-gallery/3.jpeg" class="venobox" data-gall="venue-gallery">
+                <img src="img/venue-gallery/3.jpeg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="venue-gallery">
+              <a href="img/venue-gallery/4.jpeg" class="venobox" data-gall="venue-gallery">
+                <img src="img/venue-gallery/4.jpeg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+
+    </section>
+
+    <!--==========================
+      Gallery Section
+    ============================-->
+    <section id="gallery" class="wow fadeInUp">
+
+      <div class="container">
+        <div class="section-header">
+          <h2>Gallery</h2>
+          <p>Check our gallery from the past hackathon</p>
+        </div>
+      </div>
+
+      <div class="owl-carousel gallery-carousel">
+        <a href="img/gallery/ht3.jpeg" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/ht3.jpeg" alt=""></a>
+        <a href="img/gallery/ht4.jpeg" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/ht4.jpeg" alt=""></a>
+        <a href="img/gallery/ht6.jpeg" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/ht6.jpeg" alt=""></a>
+        <a href="img/gallery/ht11.jpeg" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/ht11.jpeg" alt=""></a>
+        <a href="img/gallery/ht17.jpeg" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/ht17.jpeg" alt=""></a>
+        <a href="img/gallery/ht14.jpeg" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/ht14.jpeg" alt=""></a>
+        <a href="img/gallery/ht18.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/ht18.jpg" alt=""></a>
+        <a href="img/gallery/ht7.jpeg" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/ht7.jpeg" alt=""></a>
+        <a href="img/gallery/ht8.jpeg" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/ht8.jpeg" alt=""></a>
+      </div>
+
+    </section>
+
+
+    <!--JUDGE SECTION-->
+    <section id="speakers" class="wow fadeInUp Judges">
+      <div class="container">
+        <div class="section-header">
+          <h2>Judges</h2>
+          <p>Here are some of our Judges</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <img src="img/speakers/judge1.png" style="width: 100%" alt="Speaker 1" class="img-fluid">
+              <div class="details">
+                <h3><a href="#">Coming soon..</a></h3>
+                <div class="social">
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                  <a href=""><i class="fa fa-facebook"></i></a>
+                  <a href=""><i class="fa fa-google-plus"></i></a>
+                  <a href=""><i class="fa fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!--==========================
+      Speakers Section
+    ============================-->
+    <!-- <section id="speakers" class="wow fadeInUp">
+      <div class="container">
+        <div class="section-header">
+          <h2>Teams</h2>
+          <p>Here are some of our teams</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <img src="img/speakers/ap.jpg" style="width: 100%" alt="Speaker 1" class="img-fluid">
+              <div class="details">
+                <h3><a href="#">Team IND-godspeed</a></h3>
+                <div class="social">
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                  <a href=""><i class="fa fa-facebook"></i></a>
+                  <a href=""><i class="fa fa-google-plus"></i></a>
+                  <a href=""><i class="fa fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <img src="img/speakers/manish.png" style="width: 100%" alt="Speaker 5" class="img-fluid">
+              <div class="details">
+                <h3><a href="#">Team Javascript Mayhem</a></h3>
+                <div class="social">
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                  <a href=""><i class="fa fa-facebook"></i></a>
+                  <a href=""><i class="fa fa-google-plus"></i></a>
+                  <a href=""><i class="fa fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <img src="img/speakers/rk.png" style="width: 100%" alt="Speaker 3" class="img-fluid">
+              <div class="details">
+                <h3><a href="#">Team Creep Access</a></h3>
+                <div class="social">
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                  <a href=""><i class="fa fa-facebook"></i></a>
+                  <a href=""><i class="fa fa-google-plus"></i></a>
+                  <a href=""><i class="fa fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <img src="img/speakers/parth.png" style="width: 100%" alt="Speaker 4" class="img-fluid">
+              <div class="details">
+                <h3><a href="#">Team Bit Rebels</a></h3>
+                <div class="social">
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                  <a href=""><i class="fa fa-facebook"></i></a>
+                  <a href=""><i class="fa fa-google-plus"></i></a>
+                  <a href=""><i class="fa fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <img src="img/speakers/harsh.png" style="width: 100%" alt="Speaker 2" class="img-fluid">
+              <div class="details">
+                <h3><a href="#">Team Trojan Hash</a></h3>
+                <div class="social">
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                  <a href=""><i class="fa fa-facebook"></i></a>
+                  <a href=""><i class="fa fa-google-plus"></i></a>
+                  <a href=""><i class="fa fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <img src="img/speakers/manpreet.png" style="width: 100%" alt="Speaker 6" class="img-fluid">
+              <div class="details">
+                <h3><a href="#">Team 101 Found</a></h3>
+                <div class="social">
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                  <a href=""><i class="fa fa-facebook"></i></a>
+                  <a href=""><i class="fa fa-google-plus"></i></a>
+                  <a href=""><i class="fa fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section> -->
+
+    <!--==========================
+      Sponsors Section
+    ============================-->
+    <section id="supporters" class="section-with-bg wow fadeInUp">
+
+      <div class="container">
+        <div class="section-header">
+          <h2>Sponsors</h2>
+        </div>
+
+        <div class="row no-gutters supporters-wrap clearfix" style="margin: 0 auto">
+
+          <div class="col-lg-3 col-md-6 col-xs-6">
+            <div class="supporter-logo">
+              <a href="https://devfolio.co" target="_blank"><img src="img/sponsors/spon6.png"  class="img-fluid" alt=""></a>
+            </div>
+          </div>
+
+         
+
+          <div class="col-lg-3 col-md-6 col-xs-6">
+            <div class="supporter-logo">
+              <img src="img/sponsors/spon3.png" style="height: 100%" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-xs-6">
+            <div class="supporter-logo">
+              <img src="img/sponsors/spon4.png"  class="img-fluid" alt="">
+            </div>
+          </div>
+
+
+
+        </div>
+        <div class="row no-gutters clearfix supporters-wrap" style="text-align: center;margin: auto;align-items: center;">
+          
+          <div class="col-lg-3 col-md-6 col-xs-6 " >
+            <div class="supporter-logo">
+             
+              <img src="img/sponsors/spon5.png"  class="img-fluid" alt="">
+            </div>
+          </div>
+
+        
+          <div class="col-lg-3 col-md-6 col-xs-6" >
+            <div class="supporter-logo">
+              <img src="img/sponsors/spon1.png"  class="img-fluid" alt="">
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-xs-6 " >
+            <div class="supporter-logo">
+              <a href="https://matic.network" target="_blank"><img src="img/sponsors/spon7.png" style="height: 90%"  class="img-fluid" alt=""></a>
+            </div>
+          </div>
+
+
+        </div>
+
+        <p style="text-align: center;margin: 40px auto;font-size: 1.2rem; color: #2f3138">To sponsor us mail at <a href="mailto:byteworld@nitp.ac.in">byteworld@nitp.ac.in</a></p>
+
+
+      </div>
+
+    </section>
+
+    <!--==========================
+      F.A.Q Section
+    ============================-->
+    <section id="faq" class="wow fadeInUp">
+
+      <div class="container">
+
+        <div class="section-header">
+          <h2>F.A.Q </h2>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-9">
+              <ul id="faq-list">
+
+                <li>
+                  <a data-toggle="collapse" class="collapsed" href="#faq1">Do you have a particular theme for the Hackathon?<i class="fa fa-minus-circle"></i></a>
+                  <div id="faq1" class="collapse" data-parent="#faq-list">
+                    <p>
+                      No, this year hackathon will be based on Smart India Hackathon's Problem statements.
+                      <a href="https://www.sih.gov.in/sih2020PS">SIH Problem Statements</a>
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <a data-toggle="collapse" class="collapsed" href="#faq10">What can be the size of Team?<i class="fa fa-minus-circle"></i></a>
+                  <div id="faq10" class="collapse" data-parent="#faq-list">
+                    <p>
+                      A team can consist of 4-6 members.
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <a data-toggle="collapse" href="#faq2" class="collapsed">
+                    Are there any registration charges? <i class="fa fa-minus-circle"></i></a>
+                  <div id="faq2" class="collapse" data-parent="#faq-list">
+                    <p>
+                      Yes. There are registration charges of ₹600 per team.
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <a data-toggle="collapse" href="#faq3" class="collapsed">Do you provide accommodation and fooding? <i class="fa fa-minus-circle"></i></a>
+                  <div id="faq3" class="collapse" data-parent="#faq-list">
+                    <p>
+                      Yes. Each team member will be provided with free accommodation during the Hackathon. A nominal amount will be charged for fooding.
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <a data-toggle="collapse" href="#faq4" class="collapsed">Do you provide travel reimbursements? <i class="fa fa-minus-circle"></i></a>
+                  <div id="faq4" class="collapse" data-parent="#faq-list">
+                    <p>
+                      No. There will be no travel reimbursement.
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <a data-toggle="collapse" href="#faq5" class="collapsed">Is the selection per-member or per-team basis? <i class="fa fa-minus-circle"></i></a>
+                  <div id="faq5" class="collapse" data-parent="#faq-list">
+                    <p>
+                      The selection is a per-team basis.
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <a data-toggle="collapse" href="#faq6" class="collapsed">I don't have a CSE background. Can I still participate? <i class="fa fa-minus-circle"></i></a>
+                  <div id="faq6" class="collapse" data-parent="#faq-list">
+                    <p>
+                      Yes. Creativity is independent of your technical skills. You can learn the tools and technologies anytime.
+                    </p>
+                  </div>
+                </li>
+
+                 <li>
+                  <a data-toggle="collapse" href="#faq7" class="collapsed">Do we get any certificate for participation? <i class="fa fa-minus-circle"></i></a>
+                  <div id="faq7" class="collapse" data-parent="#faq-list">
+                    <p>
+                      Yes, you do get a certificate of participation if you qualify for the finals after the initial shortlisting.
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <a data-toggle="collapse" href="#faq8" class="collapsed">I don't find my question listed here. What can I do? <i class="fa fa-minus-circle"></i></a>
+                  <div id="faq8" class="collapse" data-parent="#faq-list">
+                    <p>
+                      You can always contact us.
+                    </p>
+                  </div>
+                </li>
+
+              </ul>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+
+
+    <!--==========================
       Contact Section
     ============================-->
     <section id="contact" class="section-bg wow fadeInUp">
@@ -784,7 +876,7 @@
 
         <div class="section-header">
           <h2>Contact Us</h2>
-          
+
         </div>
 
         <div class="row contact-info">
@@ -801,8 +893,13 @@
             <div class="contact-phone">
               <i class="ion-ios-telephone-outline"></i>
               <h3>Phone Number</h3>
-              <p><a href="tel:+917254043940">+91 7254043940 (Harsh Raj) </a><br><a href="tel:+91 6205572993">6205572993 (Kumar Harsh)</a></p>
-                                                                                    
+              <p>Coordinator</p>
+              <p><a href="tel:+918114536004">+91 8114536004 (Atul Kumar) </a></p><br>
+
+              <p>Co-coordinator</p>
+              <p><a href="tel:+917651811743">+91 7651811743(Shikhar Srivastava) </a></p>
+              <p><a href="tel:+917033216156">+91 7033216156 (Devanshu) </a></p>
+              <p><a href="tel:+919113479476">+91 9113479476 (Insha Nadeem) </a></p>
             </div>
           </div>
 
@@ -810,13 +907,14 @@
             <div class="contact-email">
               <i class="ion-ios-email-outline"></i>
               <h3>Email</h3>
-              <p><a href="mailto:hackslash.nitp@gmail.com">hackslash.nitp@gmail.com</a></p>
+              <p><a href="mailto:byteworld@nitp.ac.in">byteworld@nitp.ac.in</a></p>
+              <!-- <p><a href="mailto:hackslash.nitp@gmail.com">hackslash.nitp@gmail.com</a></p> -->
             </div>
           </div>
 
         </div>
 
-        
+
 
       </div>
     </section><!-- #contact -->
@@ -833,28 +931,30 @@
         <div class="row">
 
           <div class="col-lg-6 col-md-6 footer-info">
-            <img style="height: 90px;" src="img/logo.png"  alt="TheEvenet">
-      
+            <img style="height: 90px;" src="img/logo2.png"  alt="TheEvenet">
+
           </div>
 
-         
+
           <div class="col-lg-6 col-md-6 footer-contact">
             <h4>Connect With Us</h4>
-            
+
             <div class="social-links">
-              
-              <a href="https://www.facebook.com/tcf.nitp/?ref=br_rs" class="facebook"><i class="fa fa-facebook"></i></a>
-              <a href="https://www.instagram.com/tcf.nitp/" class="instagram"><i class="fa fa-instagram"></i></a>
-          
+
+              <a href="http://fb.me/hacknitp" class="facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+              <a href="http://instagram.com/hacknitp" class="instagram" target="_blank"><i class="fa fa-instagram"></i></a>
+
             </div>
-
+            <!-- <div class="contact social-links">
+                <a href="tel:+917254043940" class="Call"><i class="fa fa-phone" title="+917254043940 (Harsh Raj)"></i></a><span>&ensp; Harsh Raj</span>
+            </div>
+            <div class="contact social-links">
+                <a href="https://wa.me/918757884140" class="Call"><i class="fa fa-whatsapp" title="+918757884140 (Kumar Harhs)"></i></a><span>&ensp; Kumar Harsh</span>
+            </div> -->
           </div>
-
         </div>
       </div>
     </div>
-
-    
   </footer><!-- #footer -->
 
   <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
@@ -875,12 +975,35 @@
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
+  
+  <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function () {
+    let devfolioOptions = {
+        buttonSelector: '.about-btn',
+        key: 'hack-nitp',
+    }
+
+    let script = document.createElement('script');
+    script.src = "https://apply.devfolio.co";
+    document.head.append(script);
+
+    script.onload = function () {
+        new Devfolio(devfolioOptions);
+    }
+
+    script.onerror = function () {
+        document.querySelector(devfolioOptions.buttonSelector).addEventListener('click', function () {
+            window.location.href = 'https://devfolio.co/external-apply/' + devfolioOptions.key;
+        });
+    }
+});
+  </script>
 
   <script type="text/javascript">
     particlesJS('particles-js', {
       'particles': {
           'number': {
-              'value': 300,
+              'value': 120,
               'density': {
                   'enable': true,
                   'value_area': 800
@@ -905,33 +1028,33 @@
               'random': false,
               'anim': {
                   'enable': false,
-                  'speed': 2,
+                  'speed': 1,
                   'opacity_min': 0.1,
                   'sync': false
               }
           },
           'size': {
-              'value': 3,
+              'value': 4,
               'random': true,
               'anim': {
                   'enable': false,
-                  'speed': 80,
-                  'size_min': 0.1,
+                  'speed': 1,
+                  'size_min': 1,
                   'sync': false
               }
           },
           'line_linked': {
               'enable': true,
-              'distance': 90,
+              'distance': 150,
               'color': '#ffffff',
               'opacity': 0.4,
               'width': 1
           },
           'move': {
               'enable': true,
-              'speed': 6,
+              'speed': 2,
               'direction': 'none',
-              'random': false,
+              'random': true,
               'straight': false,
               'out_mode': 'out',
               'bounce': false,
@@ -949,10 +1072,7 @@
                   'enable': true,
                   'mode': 'grab'
               },
-              'onclick': {
-                  'enable': true,
-                  'mode': 'push'
-              },
+
               'resize': true
           },
           'modes': {
@@ -965,7 +1085,7 @@
                   'size': 40,
                   'duration': 2,
                   'opacity': 8,
-                  'speed': 4
+                  'speed': 1
               },
               'repulse': {
                   'distance': 140,
